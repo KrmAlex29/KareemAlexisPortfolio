@@ -1,0 +1,185 @@
+2026-07-12 21:58:06       meraki:     INFO > Meraki dashboard API session initialized with these parameters: {'version': '3.2.0', 'api_key': '************************************ac0b', 'base_url': 'https://api.meraki.com/api/v1', 'single_request_timeout': 60, 'certificate_path': '', 'requests_proxy': '', 'wait_on_rate_limit': True, 'nginx_429_retry_wait_time': 60, 'action_batch_retry_wait_time': 60, 'network_delete_retry_wait_time': 240, 'retry_4xx_error': False, 'retry_4xx_error_wait_time': 60, 'maximum_retries': 2, 'simulate': False, 'be_geo_id': None, 'caller': None, 'use_iterator_for_get_pages': False, 'validate_kwargs': False}
+2026-07-12 21:58:06       meraki:    DEBUG > {'tags': ['organizations', 'configure'], 'operation': 'getOrganization', 'method': 'GET', 'url': '/organizations/470199', 'params': None}
+2026-07-12 21:58:06       meraki:     INFO > GET https://api.meraki.com/api/v1/organizations/470199
+2026-07-12 21:58:18       meraki:  WARNING > organizations, getOrganization - HTTPSConnectionPool(host='api.meraki.com', port=443): Max retries exceeded with url: /api/v1/organizations/470199 (Caused by NameResolutionError("HTTPSConnection(host='api.meraki.com', port=443): Failed to resolve 'api.meraki.com' ([Errno 11001] getaddrinfo failed)")), retrying in 1 second
+2026-07-12 21:58:19       meraki:     INFO > GET https://api.meraki.com/api/v1/organizations/470199
+2026-07-12 21:58:20       meraki:     INFO > organizations, getOrganization - 200 OK
+2026-07-12 21:58:20       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826106118', 'params': None}
+2026-07-12 21:58:20       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826106118
+2026-07-12 21:58:20       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:20       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_3687885144863015376', 'params': None}
+2026-07-12 21:58:20       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_3687885144863015376
+2026-07-12 21:58:21       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:21       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826102426', 'params': None}
+2026-07-12 21:58:21       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826102426
+2026-07-12 21:58:21       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:21       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897663', 'params': None}
+2026-07-12 21:58:21       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897663
+2026-07-12 21:58:22       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:22       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897325', 'params': None}
+2026-07-12 21:58:22       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897325
+2026-07-12 21:58:22       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:22       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/N_573083052582916040', 'params': None}
+2026-07-12 21:58:22       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/N_573083052582916040
+2026-07-12 21:58:22       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:22       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107691', 'params': None}
+2026-07-12 21:58:22       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107691
+2026-07-12 21:58:23       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:23       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897792', 'params': None}
+2026-07-12 21:58:23       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897792
+2026-07-12 21:58:23       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:23       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826106964', 'params': None}
+2026-07-12 21:58:23       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826106964
+2026-07-12 21:58:23       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:23       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/N_573083052582918122', 'params': None}
+2026-07-12 21:58:23       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/N_573083052582918122
+2026-07-12 21:58:24       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:24       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107394', 'params': None}
+2026-07-12 21:58:24       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107394
+2026-07-12 21:58:24       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:24       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826106264', 'params': None}
+2026-07-12 21:58:24       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826106264
+2026-07-12 21:58:25       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:25       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826103448', 'params': None}
+2026-07-12 21:58:25       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826103448
+2026-07-12 21:58:25       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:25       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826105561', 'params': None}
+2026-07-12 21:58:25       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826105561
+2026-07-12 21:58:25       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:25       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107113', 'params': None}
+2026-07-12 21:58:25       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107113
+2026-07-12 21:58:26       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:26       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897806', 'params': None}
+2026-07-12 21:58:26       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897806
+2026-07-12 21:58:26       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:26       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107448', 'params': None}
+2026-07-12 21:58:26       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107448
+2026-07-12 21:58:27       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:27       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_3687885144863015017', 'params': None}
+2026-07-12 21:58:27       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_3687885144863015017
+2026-07-12 21:58:27       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:27       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897818', 'params': None}
+2026-07-12 21:58:27       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897818
+2026-07-12 21:58:27       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:27       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897793', 'params': None}
+2026-07-12 21:58:27       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897793
+2026-07-12 21:58:28       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:28       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897690', 'params': None}
+2026-07-12 21:58:28       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897690
+2026-07-12 21:58:28       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:28       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897805', 'params': None}
+2026-07-12 21:58:28       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897805
+2026-07-12 21:58:28       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:28       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107491', 'params': None}
+2026-07-12 21:58:28       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107491
+2026-07-12 21:58:28       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:28       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/N_678917643826102635', 'params': None}
+2026-07-12 21:58:28       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/N_678917643826102635
+2026-07-12 21:58:29       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:29       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826108276', 'params': None}
+2026-07-12 21:58:29       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826108276
+2026-07-12 21:58:29       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:29       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826108465', 'params': None}
+2026-07-12 21:58:29       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826108465
+2026-07-12 21:58:30       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:30       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826108466', 'params': None}
+2026-07-12 21:58:30       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826108466
+2026-07-12 21:58:30       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:30       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897734', 'params': None}
+2026-07-12 21:58:30       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897734
+2026-07-12 21:58:30       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:30       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897809', 'params': None}
+2026-07-12 21:58:30       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897809
+2026-07-12 21:58:31       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:31       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897777', 'params': None}
+2026-07-12 21:58:31       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897777
+2026-07-12 21:58:31       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:31       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107083', 'params': None}
+2026-07-12 21:58:31       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107083
+2026-07-12 21:58:31       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:31       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897222', 'params': None}
+2026-07-12 21:58:31       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897222
+2026-07-12 21:58:32       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:32       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897737', 'params': None}
+2026-07-12 21:58:32       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897737
+2026-07-12 21:58:32       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:32       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897331', 'params': None}
+2026-07-12 21:58:32       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897331
+2026-07-12 21:58:33       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:33       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826109655', 'params': None}
+2026-07-12 21:58:33       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826109655
+2026-07-12 21:58:33       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:33       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/N_678917643826113447', 'params': None}
+2026-07-12 21:58:33       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/N_678917643826113447
+2026-07-12 21:58:33       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:33       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107344', 'params': None}
+2026-07-12 21:58:33       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107344
+2026-07-12 21:58:34       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:34       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107603', 'params': None}
+2026-07-12 21:58:34       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107603
+2026-07-12 21:58:34       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:34       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107364', 'params': None}
+2026-07-12 21:58:34       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107364
+2026-07-12 21:58:34       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:34       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826106210', 'params': None}
+2026-07-12 21:58:34       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826106210
+2026-07-12 21:58:35       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:35       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826109061', 'params': None}
+2026-07-12 21:58:35       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826109061
+2026-07-12 21:58:35       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:35       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107053', 'params': None}
+2026-07-12 21:58:35       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107053
+2026-07-12 21:58:36       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:36       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107298', 'params': None}
+2026-07-12 21:58:36       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107298
+2026-07-12 21:58:36       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:36       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107493', 'params': None}
+2026-07-12 21:58:36       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107493
+2026-07-12 21:58:36       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:36       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897735', 'params': None}
+2026-07-12 21:58:36       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897735
+2026-07-12 21:58:37       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:37       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_3687885144863015099', 'params': None}
+2026-07-12 21:58:37       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_3687885144863015099
+2026-07-12 21:58:37       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:37       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107407', 'params': None}
+2026-07-12 21:58:37       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107407
+2026-07-12 21:58:37       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:37       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/N_3687885144863015002', 'params': None}
+2026-07-12 21:58:37       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/N_3687885144863015002
+2026-07-12 21:58:38       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:38       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_3687885144863015123', 'params': None}
+2026-07-12 21:58:38       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_3687885144863015123
+2026-07-12 21:58:38       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:38       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897491', 'params': None}
+2026-07-12 21:58:38       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897491
+2026-07-12 21:58:38       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:38       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826106456', 'params': None}
+2026-07-12 21:58:38       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826106456
+2026-07-12 21:58:38       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:38       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107336', 'params': None}
+2026-07-12 21:58:38       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107336
+2026-07-12 21:58:39       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:39       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826109881', 'params': None}
+2026-07-12 21:58:39       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826109881
+2026-07-12 21:58:39       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:39       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897808', 'params': None}
+2026-07-12 21:58:39       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897808
+2026-07-12 21:58:40       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:40       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_573083052582897489', 'params': None}
+2026-07-12 21:58:40       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_573083052582897489
+2026-07-12 21:58:40       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:40       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826106209', 'params': None}
+2026-07-12 21:58:40       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826106209
+2026-07-12 21:58:41       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:41       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826109267', 'params': None}
+2026-07-12 21:58:41       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826109267
+2026-07-12 21:58:41       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:41       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107233', 'params': None}
+2026-07-12 21:58:41       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107233
+2026-07-12 21:58:42       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:42       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/N_678917643826116427', 'params': None}
+2026-07-12 21:58:42       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/N_678917643826116427
+2026-07-12 21:58:42       meraki:     INFO > networks, getNetwork - 200 OK
+2026-07-12 21:58:42       meraki:    DEBUG > {'tags': ['networks', 'configure'], 'operation': 'getNetwork', 'method': 'GET', 'url': '/networks/L_678917643826107139', 'params': None}
+2026-07-12 21:58:42       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_678917643826107139
