@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="prototype.css">
+  <title>HeartShare IT Department Acceptance Form</title>
+</head>
+<body>
+
+  <h1 title="main header">HeartShare IT Laptop Acceptance Form</h1>
+  <hr>
+
+  <p id="p1">
+    It is the responsibility of the employees to use their best effort to protect HeartShare equipment and any other property from unauthorized use,
+    loss, theft, and other misuse. Corporate assets may not be used for personal benefits, nor may be sold, borrowed, or given away without proper authorization.
+    This includes the use of the building and office facilities (e.g. computers, Xerox machines, fax, email, etc).
+    <br><br>
+    I further understand that this is a HeartShare asset and hereby agree that upon my resignation/termination I am liable for the return of this equipment (laptops must be returned to the IT Department).
+    In the event that I fail to return the above asset I agree to pay the fair market value of the asset.
+  </p>
+
+  <hr>
+
+  <form id="loanerForm">
+
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname" required><br>
+
+    <label for="workAcct">HeartShare Email:</label><br>
+    <input type="email" id="workAcct" name="workAcct" required><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br><br>
+
+    <label for="lmodel">Manufacturer:</label><br>
+    <select name="model" id="lmodel">
+      <option value="dell">Dell</option>
+      <option value="hp">HP</option>
+      <option value="MS">Microsoft</option>
+    </select>
+    <br>
+
+    <label for="inputM">Model:</label><br>
+    <input type="text" id="inputM" name="inputM"><br>
+
+    <label for="sertag">Serial Tag:</label><br>
+    <input type="text" id="sertag" name="sertag"><br><br>
+
+    <label for="departments">Department:</label><br>
+    <select name="choice" id="departments" required>
+      <option value="admin">Administration</option>
+      <option value="ADH">Adult Health Home</option>
+      <option value="BDH">Brooklyn Day Hab</option>
+      <option value="CNRS">Canarsie Residence</option>
+      <option value="CCRBRWN">CCR-Brownsville</option>
+      <option value="COMM">Communications</option>
+      <option value="CMMHD">Community Day Hab</option>
+      <option value="DD">DD</option>
+      <option value="DDCDH">DD Community Living Program</option>
+      <option value="Dvlp">Development</option>
+      <option value="ebk">East Brooklyn Office</option>
+      <option value="ENP">Energy Program</option>
+      <option value="HOFFDH">Hoffman Day Hab</option>
+      <option value="HR">Human Resources</option>
+      <option value="SDTCD">Staff Development, Training, and Culture Department</option>
+      <option value="QDH">Queens Day Hab</option>
+      <option value="QAI">Quality Assurance</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Submit</button>
+    <p id="statusMsg" role="status"></p>
+
+  </form>
+
+  <script>
+    // Replace this with your own endpoint URL. For testing without a real backend,
+    // generate a free one-time URL at https://webhook.site and paste it here —
+    // every submission will show up live on that page so you can see the JSON payload.
+    const ENDPOINT_URL = "https://webhook.site/85938d4c-638f-4450-bc7a-35dd8f13c900";
+
+    const form = document.getElementById("loanerForm");
+    const statusMsg = document.getElementById("statusMsg");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      statusMsg.textContent = "Submitting...";
+
+      const formData = new FormData(form);
+      const payload = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch(ENDPOINT_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+          statusMsg.textContent = "Form submitted successfully. Thank you.";
+          form.reset();
+        } else {
+          statusMsg.textContent = "Submission failed (server error). Please try again.";
+        }
+      } catch (err) {
+        statusMsg.textContent = "Submission failed (network error). Please try again.";
+        console.error("Form submission error:", err);
+      }
+    });
+  </script>
+
+</body>
+</html>
